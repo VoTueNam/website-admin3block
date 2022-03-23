@@ -33,7 +33,7 @@ document
                             "Username or Password Incorrect!!!";
                         localStorage.removeItem("_grecaptcha");
                         grecaptcha.reset();
-                        return
+                        return;
                     }
                     localStorage.setItem("accesstoken", data.accessToken);
                     localStorage.setItem("refreshtoken", data.refreshToken);
@@ -44,7 +44,7 @@ document
                         "Username or Password Incorrect!!!";
                     localStorage.removeItem("_grecaptcha");
                     grecaptcha.reset();
-                })
+                });
         }
     });
 function authentication(UserName, PassWord) {
@@ -65,3 +65,5 @@ function authentication(UserName, PassWord) {
             window.location.pathname = "./MainPage/";
         });
 }
+
+//add test
