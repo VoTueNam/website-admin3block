@@ -403,7 +403,7 @@ function findnumberSearch(urledit, stt, index) {
     searchurl(state.page);
 }
 //Confirm real delete
-function confirmdeleteTrash(urldestroy, stt) {
+function confirmdeleteSearch(urldestroy, stt) {
     var result = confirm("Are you sure to delete?");
     if (result) {
         findnumberSearch(urldestroy, stt, 2);
